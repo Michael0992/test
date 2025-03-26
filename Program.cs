@@ -87,7 +87,7 @@ if(plz2.Length == 0) plz2 = "XXXXX";
 
 
 string? region2 = 
-    plz2?.Length != 5 && !plz2.All(char.IsDigit)? null:
+    plz2.Length != 5 && !plz2.All(char.IsDigit)? null:
     plz2[0] == '0' || plz2[0] == '1' ? "Ostdeutschland":
     plz2[0] == '2' ? "Norddeutschland":
     plz2[0] == '3' ? "Mitteldeutschland":
